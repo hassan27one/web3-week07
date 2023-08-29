@@ -56,7 +56,21 @@ console.log("New Array02 after Multiplied by 2 is = ", NewArray2);
 // New Array02 after Multiplied by 2 is =  [ 2, 4, 6, 8, 10 ]
 
 // =================================================================================
+// Q-3  Given an array of strings ["apple", "banana", "cherry", "date", "grape"], use the filter method to create a new array containing only the fruits with more than 5 characters.
+
+let Array03 = ["apple", "banana", "cherry", "date", "grape"];
+console.log("Ayyay03 of Fruits = ", Array03);
+
+
+let NewArray03 = Array03.filter(Array03 => Array03.length == 5);
+
+console.log("NewArray03 of Fruits containing only 5 Characters = ", NewArray03);
+
+
+// Output -------------------------------------
+// Ayyay03 of Fruits =  [ 'apple', 'banana', 'cherry', 'date', 'grape' ]
+// NewArray03 of Fruits containing only 5 Characters =  [ 'apple', 'grape' ]
 
 
 
-
+// =================================================================================
