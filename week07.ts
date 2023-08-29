@@ -22,7 +22,9 @@
 // Q-1  Write a program that uses filter to remove all negative numbers from an array of numbers
 
 let Array1 = [0, 1, -2, 3, 4, 5, -6, 7 ];
+console.log("Array01 is = = ", Array1);
  
+
 for(var i:number=0; i<Array1.length;i++)
     {
     if(Array1[i] <= 0)
@@ -31,8 +33,30 @@ for(var i:number=0; i<Array1.length;i++)
         i--;     
     }
     }
-console.log(Array1);
+console.log("Array01 after Remove all -ve Numers is = ", Array1);
          
 // Output -------------------------------------
-//  [ 1, 3, 4, 5, 7 ]
- 
+//  Array01 after Remove all -ve Numers is = [ 1, 3, 4, 5, 7 ]
+
+
+// =================================================================================
+// Q-2  Given an array of numbers [1, 2, 3, 4, 5], use the map method to create a new array where each number is multiplied by 2.
+
+let Array2 = [1, 2, 3, 4, 5];
+console.log("Array2 is = ", Array2 );
+
+
+let NewArray2 = Array2.map(function MultipliedBy2(num:number) {
+    return num*2;
+})
+
+console.log("New Array02 after Multiplied by 2 is = ", NewArray2);
+
+// Output -------------------------------------
+// New Array02 after Multiplied by 2 is =  [ 2, 4, 6, 8, 10 ]
+
+// =================================================================================
+
+
+
+
