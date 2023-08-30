@@ -60,3 +60,25 @@ console.log("Original of temperatures in Celsius is = ", CelsiusArray);
 let FahrenheitArray = CelsiusArray.map((CelsiusArray) => (CelsiusArray * 9) / 5 + 32);
 console.log("new array Fahrenheit Temperature = ", FahrenheitArray);
 // Output -----------------------------------------------------------------
+// Original of temperatures in Celsius is =  [ 0, 10, 20, 30, 40 ]
+// new array Fahrenheit Temperature =  [ 32, 50, 68, 86, 104 ]
+// Q-6 =================================================================================
+// Given an array of numbers [3, 6, 9, 12, 15, 18], 
+// use the map and filter methods together to 
+// create a new array containing the doubled values of odd numbers.
+let ArrayQ6 = [3, 6, 9, 12, 15, 18];
+console.log("Original Array of Number is =", ArrayQ6);
+let doubleOfOdd = ArrayQ6.filter((value1) => value1 % 2 !== 0).map((value2) => value2 * 2);
+console.log("new array containing the doubled values of odd numbers = ", doubleOfOdd);
+// Output -----------------------------------------------------------------
+// Original Array of Number is = [ 3, 6, 9, 12, 15, 18 ]
+// new array containing the doubled values of odd numbers =  [ 6, 18, 30 ]
+// Q-7 =================================================================================
+// Given an array of names ["Alice", "Bob", "Charlie", "David", "Emily"], 
+// use the forEach method to log each name with an exclamation mark at the end, e.g., "Alice!".
+let ArrayNames = ["Alice", "Bob", "Charlie", "David", "Emily"];
+console.log("Orignal Array of Names = ", ArrayNames);
+let ArrayNamesNew = ArrayNames.forEach(element => {
+    console.log(element + "!");
+});
+// Output -----------------------------------------------------------------
