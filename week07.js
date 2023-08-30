@@ -35,7 +35,7 @@ let Array03 = ["apple", "banana", "cherry", "date", "grape"];
 console.log("Ayyay03 of Fruits = ", Array03);
 let NewArray03 = Array03.filter(Array03 => Array03.length == 5);
 console.log("NewArray03 of Fruits containing only 5 Characters = ", NewArray03);
-// Output -------------------------------------
+// Output -----------------------------------------------------------------
 // Ayyay03 of Fruits =  [ 'apple', 'banana', 'cherry', 'date', 'grape' ]
 // NewArray03 of Fruits containing only 5 Characters =  [ 'apple', 'grape' ]
 // =================================================================================
@@ -46,4 +46,17 @@ console.log("Original Ayyay04 is = ", Array04);
 let SquareNumArray04 = Array04.filter((Array04) => Array04 % 2 === 0)
     .map((EvenArray04) => EvenArray04 * EvenArray04);
 console.log("new array containing the squares of even numbers is = ", SquareNumArray04);
+// Output -----------------------------------------------------------------
+// Original Ayyay04 is =  [
+//     1, 2, 3, 4,  5,
+//     6, 7, 8, 9, 10
+//   ]
+//   new array containing the squares of even numbers is =  [ 4, 16, 36, 64, 100 ]
 // =================================================================================
+// Q-5  Given an array of temperatures in Celsius [0, 10, 20, 30, 40], 
+// use the map method to create a new array where each temperature is converted to Fahrenheit using the formula (Celsius * 9/5) + 32.
+let CelsiusArray = [0, 10, 20, 30, 40];
+console.log("Original of temperatures in Celsius is = ", CelsiusArray);
+let FahrenheitArray = CelsiusArray.map((CelsiusArray) => (CelsiusArray * 9) / 5 + 32);
+console.log("new array Fahrenheit Temperature = ", FahrenheitArray);
+// Output -----------------------------------------------------------------

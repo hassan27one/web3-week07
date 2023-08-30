@@ -95,3 +95,17 @@ console.log("new array containing the squares of even numbers is = ", SquareNumA
 
 
 // =================================================================================
+// Q-5  Given an array of temperatures in Celsius [0, 10, 20, 30, 40], 
+// use the map method to create a new array where each temperature is converted to Fahrenheit using the formula (Celsius * 9/5) + 32.
+
+let CelsiusArray = [0, 10, 20, 30, 40];
+console.log("Original of temperatures in Celsius is = ", CelsiusArray);
+
+let FahrenheitArray = CelsiusArray.map((CelsiusArray) => (CelsiusArray * 9) /5 + 32);
+
+console.log("new array Fahrenheit Temperature = ", FahrenheitArray);
+
+// Output -----------------------------------------------------------------
+
+// Original of temperatures in Celsius is =  [ 0, 10, 20, 30, 40 ]
+// new array Fahrenheit Temperature =  [ 32, 50, 68, 86, 104 ]
