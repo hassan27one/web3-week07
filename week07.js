@@ -35,4 +35,15 @@ let Array03 = ["apple", "banana", "cherry", "date", "grape"];
 console.log("Ayyay03 of Fruits = ", Array03);
 let NewArray03 = Array03.filter(Array03 => Array03.length == 5);
 console.log("NewArray03 of Fruits containing only 5 Characters = ", NewArray03);
+// Output -------------------------------------
+// Ayyay03 of Fruits =  [ 'apple', 'banana', 'cherry', 'date', 'grape' ]
+// NewArray03 of Fruits containing only 5 Characters =  [ 'apple', 'grape' ]
+// =================================================================================
+// Q-4  Given an array of numbers [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], use the map and filter methods together to 
+//create a new array containing the squares of even numbers.
+let Array04 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log("Original Ayyay04 is = ", Array04);
+let SquareNumArray04 = Array04.filter((Array04) => Array04 % 2 === 0)
+    .map((EvenArray04) => EvenArray04 * EvenArray04);
+console.log("new array containing the squares of even numbers is = ", SquareNumArray04);
 // =================================================================================
